@@ -1,0 +1,13 @@
+name: Test EC2 Runner
+
+on:
+  push:
+	branches:
+  	- main
+
+jobs:
+  test-ec2-runner:
+	runs-on: self-hosted
+	steps:
+  	- name: Vérification du code
+    	run: echo "Hello depuis mon runner EC2 sans Docker !"
